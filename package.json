@@ -1,9 +1,9 @@
 {
   "name": "realtime-chat",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "license": "GNU Affero",
   "private": true,
+  "author": "mrcxtkl <github.com/mrcxtkl>",
   "workspaces": {
     "packages": [
       "packages/*"
