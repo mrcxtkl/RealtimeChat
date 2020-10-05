@@ -1,17 +1,20 @@
 import React from 'react'
 
-import { SocketProvider, useSocket } from './contexts/Socket'
+import { ThemeProvider } from './contexts/Theme'
+import { SocketProvider } from './contexts/Socket'
 
-import Chat from './pages/Chat'
-import Register from './pages/Register'
+import Redirect from './pages/Redirect'
+
+import GlobalStyles from './styles/global'
 
 const App = () => {
-  const { hasSocket } = useSocket()
-
   return (
-    <SocketProvider>
-      { hasSocket ? <Chat /> : <Register /> }
-    </SocketProvider>
+    <ThemeProvider>
+      <SocketProvider>
+        <GlobalStyles />
+        <Redirect />
+      </SocketProvider>
+    </ThemeProvider>
   )
 }
 
