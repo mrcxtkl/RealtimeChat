@@ -5,6 +5,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
+    "start": "node src/Server.js",
     "dev": "nodemon src/Server.js"
   },
   "devDependencies": {
